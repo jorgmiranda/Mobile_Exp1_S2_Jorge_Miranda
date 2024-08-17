@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/app_backgoud">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="100dp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/logo" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/usuario_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:focusable="true"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:padding="18dp"
+            android:textColor="@color/black"
+            android:textColorHint="#9b9b9b"
+            android:clickable="true"
+
+            android:textSize="25sp"
+            android:hint="@string/str_usuario"
+            android:background="@drawable/app_button_shape" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:focusable="true"
+            android:inputType="textPassword"
+            android:importantForAutofill="no"
+            android:padding="18dp"
+            android:textColor="@color/black"
+            android:textColorHint="#9b9b9b"
+            android:textSize="25sp"
+            android:clickable="true"
+
+            android:hint="@string/str_password"
+            android:background="@drawable/app_button_shape" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/white"
+            android:padding="18dp"
+            android:text="@string/str_btn_iniciar"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/txtview_recupear_contra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_recuperar_contra"
+                android:textSize="18sp"
+                android:textColor="#0000FF"  />
+
+            <TextView
+                android:id="@+id/txtview_registro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:focusable="true"
+                android:text="@string/str_registrarse"
+                android:textSize="18sp"
+                android:textColor="#0000FF"
+                android:clickable="true"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

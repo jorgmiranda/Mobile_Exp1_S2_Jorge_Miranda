@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_backgoud"
+    tools:context=".RegistroActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_registro"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#4169E1"
+        app:title="Registro de Usuario"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:elevation="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"/>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="100dp"
+            tools:ignore="UselessParent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:text="Favor de completar el siguiente formulario para registrarse en el sistema"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|left"
+                android:text="Nombres:"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registro_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/app_button_shape"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="30dp"
+                android:hint="Nombres"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="18dp"
+                android:textColor="@color/black"
+                android:textColorHint="#9b9b9b"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|left"
+                android:text="Apellido Paterno:"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registro_apellidopaterno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/app_button_shape"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="30dp"
+                android:hint="Apellido Paterno"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="18dp"
+                android:textColor="@color/black"
+                android:textColorHint="#9b9b9b"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|left"
+                android:text="Apellido Materno:"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registro_apellidomaterno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/app_button_shape"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="30dp"
+                android:hint="Apellido Materno"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="18dp"
+                android:textColor="@color/black"
+                android:textColorHint="#9b9b9b"
+                android:textSize="18sp" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|left"
+                android:text="Dirección:"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registro_direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/app_button_shape"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="30dp"
+                android:hint="Dirección"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="18dp"
+                android:textColor="@color/black"
+                android:textColorHint="#9b9b9b"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|left"
+                android:text="Codigo Postal:"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registro_codigopostal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/app_button_shape"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="30dp"
+                android:hint="Codigo Postal"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:padding="18dp"
+                android:textColor="@color/black"
+                android:textColorHint="#9b9b9b"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|left"
+                android:text="Correo:"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registro_correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/app_button_shape"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="30dp"
+                android:hint="Correo"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:padding="18dp"
+                android:textColor="@color/black"
+                android:textColorHint="#9b9b9b"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|left"
+                android:text="Contraseña:"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registro_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/app_button_shape"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="30dp"
+                android:hint="Contraseña"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:padding="18dp"
+                android:textColor="@color/black"
+                android:textColorHint="#9b9b9b"
+                android:textSize="18sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/registrarse_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/white"
+                android:padding="18dp"
+                android:text="Registrarse"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
