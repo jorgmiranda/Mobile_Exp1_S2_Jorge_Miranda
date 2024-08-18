@@ -21,7 +21,6 @@
         android:layout_marginBottom="10dp"/>
 
     <ScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -40,12 +39,36 @@
                 android:text="Favor de completar el siguiente formulario para registrarse en el sistema"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|left"
+                android:text="@string/str_rut"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registro_rut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/app_button_shape"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="30dp"
+                android:hint="@string/str_rut"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="18dp"
+                android:textColor="@color/black"
+                android:textColorHint="#9b9b9b"
+                android:textSize="18sp"
+                />
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="start|left"
-                android:text="Nombres:"
+                android:text="@string/str_nombres"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
@@ -55,23 +78,22 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:background="@drawable/app_button_shape"
-                android:clickable="true"
-                android:focusable="true"
                 android:layout_marginLeft="50dp"
                 android:layout_marginBottom="30dp"
-                android:hint="Nombres"
+                android:hint="@string/str_nombres"
                 android:importantForAutofill="no"
                 android:inputType="text"
                 android:padding="18dp"
                 android:textColor="@color/black"
                 android:textColorHint="#9b9b9b"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                />
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="start|left"
-                android:text="Apellido Paterno:"
+                android:text="@string/str_app_paterno"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
@@ -81,11 +103,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:background="@drawable/app_button_shape"
-                android:clickable="true"
-                android:focusable="true"
                 android:layout_marginLeft="50dp"
                 android:layout_marginBottom="30dp"
-                android:hint="Apellido Paterno"
+                android:hint="@string/str_app_paterno"
                 android:importantForAutofill="no"
                 android:inputType="text"
                 android:padding="18dp"
@@ -97,7 +117,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="start|left"
-                android:text="Apellido Materno:"
+                android:text="@string/str_app_materno"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
@@ -107,11 +127,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:background="@drawable/app_button_shape"
-                android:clickable="true"
-                android:focusable="true"
                 android:layout_marginLeft="50dp"
                 android:layout_marginBottom="30dp"
-                android:hint="Apellido Materno"
+                android:hint="@string/str_app_materno"
                 android:importantForAutofill="no"
                 android:inputType="text"
                 android:padding="18dp"
@@ -124,7 +142,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="start|left"
-                android:text="Dirección:"
+                android:text="@string/str_direccion"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
@@ -134,11 +152,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:background="@drawable/app_button_shape"
-                android:clickable="true"
-                android:focusable="true"
                 android:layout_marginLeft="50dp"
                 android:layout_marginBottom="30dp"
-                android:hint="Dirección"
+                android:hint="@string/str_direccion"
                 android:importantForAutofill="no"
                 android:inputType="text"
                 android:padding="18dp"
@@ -146,37 +162,12 @@
                 android:textColorHint="#9b9b9b"
                 android:textSize="18sp" />
 
-            <com.google.android.material.textview.MaterialTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="start|left"
-                android:text="Codigo Postal:"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/registro_codigopostal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:background="@drawable/app_button_shape"
-                android:clickable="true"
-                android:focusable="true"
-                android:layout_marginLeft="50dp"
-                android:layout_marginBottom="30dp"
-                android:hint="Codigo Postal"
-                android:importantForAutofill="no"
-                android:inputType="number"
-                android:padding="18dp"
-                android:textColor="@color/black"
-                android:textColorHint="#9b9b9b"
-                android:textSize="18sp" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="start|left"
-                android:text="Correo:"
+                android:text="@string/str_correo"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
@@ -186,11 +177,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:background="@drawable/app_button_shape"
-                android:clickable="true"
-                android:focusable="true"
+
                 android:layout_marginLeft="50dp"
                 android:layout_marginBottom="30dp"
-                android:hint="Correo"
+                android:hint="@string/str_correo"
                 android:importantForAutofill="no"
                 android:inputType="textEmailAddress"
                 android:padding="18dp"
@@ -202,7 +192,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="start|left"
-                android:text="Contraseña:"
+                android:text="@string/str_password"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
@@ -212,11 +202,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:background="@drawable/app_button_shape"
-                android:clickable="true"
-                android:focusable="true"
+
                 android:layout_marginLeft="50dp"
-                android:layout_marginBottom="30dp"
-                android:hint="Contraseña"
+                android:layout_marginBottom="40dp"
+                android:hint="@string/str_password"
                 android:importantForAutofill="no"
                 android:inputType="textPassword"
                 android:padding="18dp"
@@ -231,7 +220,8 @@
                 android:layout_marginTop="32dp"
                 android:backgroundTint="@color/white"
                 android:padding="18dp"
-                android:text="Registrarse"
+                android:text="@string/str_registrarse"
+                android:layout_marginBottom="80dp"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
