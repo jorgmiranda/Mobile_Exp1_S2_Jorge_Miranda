@@ -13,8 +13,18 @@
         android:theme="@style/Theme.Exp1_S2_Jorge_Miranda"
         tools:targetApi="31">
         <activity
-            android:name=".RegistroActivity"
+            android:name=".UserActivity"
             android:exported="false" />
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecuperarContraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
